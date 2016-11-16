@@ -1,0 +1,15 @@
+// EXERCICE 3 - Projet TOTO
+On va modifier student.php pour charger les données en Ajax
+- dans student.php, supprimer le code HTML d'affichage, et ne mettre que : <div id="studentContent"></div>
+- créer un répertoire ajax, avec le fichier student.php
+- exécuter une requête ajax vers ce fichier en POST
+	* ajax/student.php récupère l'id du student passé en POST
+	* puis renverra du code HTML avec les informations sur le student
+	* student.php va insérer dans la div (id="studentContent") le retour HTML de l'ajax
+
+// EXERCICE++
+- créer un fichier "ajax/add.php"
+- intercepter la soumission du formulaire d'ajout de student (add.php)
+- exécuter une requête ajax avec les données du formulaire en POST
+- la page ne se rechargeant pas, récupérer un code de retour permettant de savoir si l'ajout a fonctionné ou s'il y a une erreur, et laquelle
+	(code de retour = affichage fait par ajax/add.php)
